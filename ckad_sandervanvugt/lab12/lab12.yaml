@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ready-togo
+spec:
+  containers:
+  - image: web
+    name: nginx
+    ports:
+    - containerPort: 80
+  - image: busybox
+    name: app
+    readinessProbe:
+      tcpSocket:
+        port: 80
+      initialDelaySeconds: 5
+      periodSeconds: 10
+    command: ['sleep', '3600']

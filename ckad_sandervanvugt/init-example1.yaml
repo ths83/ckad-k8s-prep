@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: init-example1
+spec:
+  initContainers:
+  - name: web
+    image: httpd
+  containers:
+  - name: alpine
+    image: alpine

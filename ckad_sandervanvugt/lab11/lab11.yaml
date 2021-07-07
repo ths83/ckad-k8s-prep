@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: secretservice
+  name: secretservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: secretservice
+  template:
+    metadata:
+      labels:
+        app: secretservice
+    spec:
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: secret-users
+      containers:
+      - image: alpine
+        name: alpine
+        command: ['sleep', '600']
+        volumeMounts:
+        - name: secret-volume
+          mountPath: /etc/users

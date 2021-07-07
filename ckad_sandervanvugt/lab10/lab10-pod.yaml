@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: lab10-pvc
+  name: lab10-pvc
+spec:
+  volumes: 
+    - name: pvlab
+      persistentVolumeClaim:
+        claimName: pvc-lab10
+  containers:
+    - image: httpd
+      name: lab10-pvc
+      ports:
+        - containerPort: 80
+      volumeMounts:
+        - mountPath: "/var/www/html"
+          name: pvlab
