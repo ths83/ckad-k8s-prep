@@ -1,7 +1,5 @@
 # Scenario
 
-_From: https://learn.acloud.guru/handson/53df2b3e-6346-4dd3-997a-3db86593334c/course/d068441f-75b4-4fe8-a7a6-df9153f24a35_
-
 This lab is designed to help prepare for the kinds of tasks and scenarios encountered during the Certified Kubernetes Application Developer (CKAD) exam.
 
 Our team has a pod that generates some log output. However, they want to consume the data using an external application, which requires the data to be in a specific format. Our task is to create a pod design that utilizes an adapter running fluentd to format the output from the main container.

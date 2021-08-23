@@ -1,7 +1,5 @@
 # Scenario
 
-_From: https://learn.acloud.guru/handson/53df2b3e-6346-4dd3-997a-3db86593334c/course/d068441f-75b4-4fe8-a7a6-df9153f24a35_
-
 Our company has a Kubernetes cluster that is running several pods and services. A service called oauth-provider in the gem namespace has stopped working. Our task is to investigate the service and determine what is causing the problem, save some relevant data for future analysis, and then fix the problem.
 
 The broken service is oauth-provider. It is located in the gem namespace.

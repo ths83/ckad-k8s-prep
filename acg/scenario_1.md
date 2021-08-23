@@ -1,6 +1,5 @@
 # Scenario
 
-_From: https://learn.acloud.guru/handson/befc5a89-3288-412a-b6ae-68925d5f967b/course/d068441f-75b4-4fe8-a7a6-df9153f24a35_
 
 Our pizza restaurant is working on a new web application designed to run in a Kubernetes cluster. The development team has designed a web service which serves a list of pizza toppings. The team has provided a set of specifications which the pizza topping web service needs in order to run.
 
